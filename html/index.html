@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn DevOps</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #1f2937;
+      background: #f4f7fb;
+    }
+    header {
+      background: linear-gradient(135deg, #111827, #2563eb);
+      color: white;
+      padding: 70px 20px;
+      text-align: center;
+    }
+    header h1 { font-size: 3rem; margin-bottom: 15px; }
+    header p { font-size: 1.2rem; max-width: 700px; margin: auto; }
+    nav {
+      background: #0f172a;
+      padding: 15px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover { color: #60a5fa; }
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .intro {
+      text-align: center;
+      margin-bottom: 35px;
+    }
+    .intro h2 { font-size: 2rem; margin-bottom: 10px; }
+    .courses {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 22px;
+    }
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      transition: transform 0.2s;
+    }
+    .card:hover { transform: translateY(-5px); }
+    .card h3 { color: #2563eb; margin-bottom: 10px; }
+    .card p { margin-bottom: 15px; }
+    .card ul { padding-left: 20px; margin-bottom: 20px; }
+    .btn {
+      display: inline-block;
+      background: #2563eb;
+      color: white;
+      padding: 10px 16px;
+      border-radius: 7px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .btn:hover { background: #1d4ed8; }
+    .roadmap {
+      background: white;
+      margin-top: 45px;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    }
+    .roadmap ol { padding-left: 25px; }
+    .roadmap li { margin: 12px 0; }
+    footer {
+      margin-top: 50px;
+      background: #111827;
+      color: white;
+      text-align: center;
+      padding: 25px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Learn DevOps</h1>
+    <p>Build practical skills in cloud computing, automation, containers, CI/CD, infrastructure as code, monitoring, and DevSecOps.</p>
+  </header>
+
+  <nav>
+    <a href="#courses">Courses</a>
+    <a href="#roadmap">Roadmap</a>
+    <a href="#about">About</a>
+  </nav>
+
+  <main class="container">
+    <section class="intro" id="courses">
+      <h2>DevOps Learning Path</h2>
+      <p>Start with the fundamentals and progress toward real-world DevOps projects.</p>
+    </section>
+
+    <section class="courses">
+      <div class="card">
+        <h3>Linux & Networking</h3>
+        <p>Learn the foundations needed to manage cloud and server environments.</p>
+        <ul>
+          <li>Linux commands</li>
+          <li>Processes & services</li>
+          <li>TCP/IP & DNS</li>
+          <li>SSH & security groups</li>
+        </ul>
+        <a class="btn" href="#">Start Learning</a>
+      </div>
+
+      <div class="card">
+        <h3>Git & GitHub</h3>
+        <p>Learn source control and collaborative software development workflows.</p>
+        <ul>
+          <li>Git commands</li>
+          <li>Branches & merges</li>
+          <li>Pull requests</li>
+          <li>GitHub workflows</li>
+        </ul>
+        <a class="btn" href="#">Start Learning</a>
+      </div>
+
+      <div class="card">
+        <h3>AWS Cloud</h3>
+        <p>Build practical cloud infrastructure using AWS services.</p>
+        <ul>
+          <li>EC2 & VPC</li>
+          <li>S3 & RDS</li>
+          <li>IAM</li>
+          <li>ECS & EKS</li>
+        </ul>
+        <a class="btn" href="#">Start Learning</a>
+      </div>
+
+      <div class="card">
+        <h3>Docker</h3>
+        <p>Learn how to package applications into portable containers.</p>
+        <ul>
+          <li>Images & containers</li>
+          <li>Dockerfiles</li>
+          <li>Docker Compose</li>
+          <li>Container registries</li>
+        </ul>
+        <a class="btn" href="#">Start Learning</a>
+      </div>
+
+      <div class="card">
+        <h3>Kubernetes</h3>
+        <p>Learn container orchestration and production deployment concepts.</p>
+        <ul>
+          <li>Pods & deployments</li>
+          <li>Services</li>
+          <li>ConfigMaps & Secrets</li>
+          <li>Scaling & networking</li>
+        </ul>
+        <a class="btn" href="#">Start Learning</a>
+      </div>
+
+      <div class="card">
+        <h3>CI/CD</h3>
+        <p>Automate application builds, testing, and deployments.</p>
+        <ul>
+          <li>CodeBuild</li>
+          <li>CodePipeline</li>
+          <li>GitHub Actions</li>
+          <li>Deployment strategies</li>
+        </ul>
+        <a class="btn" href="#">Start Learning</a>
+      </div>
+
+      <div class="card">
+        <h3>Terraform & IaC</h3>
+        <p>Manage cloud infrastructure through reusable infrastructure as code.</p>
+        <ul>
+          <li>Terraform providers</li>
+          <li>Resources & variables</li>
+          <li>Modules</li>
+          <li>State management</li>
+        </ul>
+        <a class="btn" href="#">Start Learning</a>
+      </div>
+
+      <div class="card">
+        <h3>Monitoring & Security</h3>
+        <p>Learn how to operate secure and observable production systems.</p>
+        <ul>
+          <li>CloudWatch</li>
+          <li>Prometheus & Grafana</li>
+          <li>Logging & alerting</li>
+          <li>DevSecOps practices</li>
+        </ul>
+        <a class="btn" href="#">Start Learning</a>
+      </div>
+    </section>
+
+    <section class="roadmap" id="roadmap">
+      <h2>Recommended DevOps Roadmap</h2>
+      <ol>
+        <li>Learn Linux and networking fundamentals.</li>
+        <li>Master Git and GitHub.</li>
+        <li>Learn AWS cloud fundamentals.</li>
+        <li>Build and run applications with Docker.</li>
+        <li>Learn CI/CD automation.</li>
+        <li>Learn Terraform and Infrastructure as Code.</li>
+        <li>Learn Kubernetes and container orchestration.</li>
+        <li>Add monitoring, logging, security, and DevSecOps.</li>
+        <li>Build end-to-end DevOps projects.</li>
+      </ol>
+    </section>
+
+    <section class="roadmap" id="about">
+      <h2>About Learn DevOps</h2>
+      <p>
+        Learn DevOps is a practical learning website designed to help beginners
+        and aspiring cloud engineers develop hands-on DevOps skills through
+        structured learning paths and projects.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Learn DevOps. Learn. Build. Automate. Deploy.</p>
+  </footer>
+
+</body>
+</html>
