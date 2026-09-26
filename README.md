@@ -5,11 +5,11 @@ Follow next steps in order to install nodejs app and create a dockerimage
 ### Step 1 - Git clone 
 
 ```
-git clone https://github.com/saasscaleup/nodejs-ssl-server.git
+git clone https://github.com/ebotsidneysmith/nodejs-docker-aws-ecs.git
 ```
 
 ```
-cd nodejs-ssl-server
+cd nodejs-docker-aws-ecs
 ```
 
 ```
